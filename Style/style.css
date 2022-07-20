@@ -36,7 +36,7 @@ body{
     font-size: 16px;
     color: #FFFFFF;
 }
-.btn{
+.btn , .btn-m{
     margin: 15px;
     padding: 16px 25px;
     color: #FFFFFF;
@@ -159,8 +159,68 @@ hr{
     margin-right: 15px;
 }
 
+
+
+
+/*-----------Upcomming match------------*/
+/*-----------Upcomming match Header------------*/
+.btn-m:hover{
+    cursor: pointer;
+    background-color: darkslateblue;
+    transition: .9s ease-in-out;
+}
+
+
+/*-----------Upcomming match Main------------*/
+.blogs{
+    margin-bottom: 15px;
+}
+.match-news-m{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.blogs-card-m{
+    text-align: center;
+    margin-bottom: 10px;
+    margin-right: 25px;
+    padding: 30px;
+    border-radius: 15px;
+    border: 2px solid white;
+    box-shadow: 5px 5px 5px whitesmoke;
+}
+/*.blogs-card-m img{
+    width: 100%;
+}*/
+.match-head{
+    font-size: 20px;
+    color: #161616;
+}
+p span{
+    font-size: 16px;
+    color: #4D4D4D;
+}
+
+.flag-div{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.flag{
+    display: flex;
+}
+.flag img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
 /*--------Media Query---------*/
 @media only screen and (max-width: 676px) {
+    /*---Header----*/
     .container{
         display: flex;
         justify-content: center;
@@ -172,11 +232,7 @@ hr{
     .half-width{
         width: 100%;
     }
-    .match-news{
-        margin-left: -14px;
-        padding: 15px;
-        grid-template-columns: repeat(1,1fr);
-    }
+    /*---main match Aside blocks----*/
     .blogs{
         display: grid;
     }
@@ -185,6 +241,12 @@ hr{
     }
     .blogs-card{
         margin-right: -12px;
+    }
+    /*---main match Match news----*/
+    .match-news{
+        margin-left: -14px;
+        padding: 15px;
+        grid-template-columns: repeat(1,1fr);
     }
     /*---Footer----*/
     .footer-p{
