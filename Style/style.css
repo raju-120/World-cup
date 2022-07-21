@@ -295,7 +295,11 @@ p span{
         background-color: white;
     }
     .blogs-item a{
-        margin-right: 50%;
+        text-align: center;
+        margin-right: 25%;
+        font-size: 20px;
+        height: 2.5em;
+        width: 10em;
     }
     .blog-info{
         display: flex;
