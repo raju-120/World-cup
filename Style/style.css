@@ -36,7 +36,7 @@ body{
     font-size: 16px;
     color: #FFFFFF;
 }
-.btn ,.btn-h ,.btn-m{
+.btn,.btn-m{
     margin: 15px;
     padding: 16px 25px;
     color: #FFFFFF;
@@ -119,8 +119,13 @@ p small{
     color: rgba(22, 22, 22, 0.7);
     margin-right: 25px;
 }
-.btn{
+.btn-h{
     display: none;
+    margin: 15px;
+    padding: 16px 25px;
+    color: #FFFFFF;
+    border-radius: 5px;
+    background-color:#DD0000;
 }
 
 /*----------Footer---------*/
