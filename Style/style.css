@@ -36,7 +36,7 @@ body{
     font-size: 16px;
     color: #FFFFFF;
 }
-.btn , .btn-m{
+.btn ,.btn-h ,.btn-m{
     margin: 15px;
     padding: 16px 25px;
     color: #FFFFFF;
@@ -54,8 +54,12 @@ body{
     margin-top: 5em;
     display: flex;
 }
-
+.blog-info{
+    display: flex;
+    flex-direction: row;
+}
 .blogs-item{
+    display: block;
     margin: 5px 5px 0 24px;
     margin-right: 24px;
     padding: 30px;
@@ -188,9 +192,6 @@ hr{
     border: 2px solid white;
     box-shadow: 5px 5px 5px whitesmoke;
 }
-/*.blogs-card-m img{
-    width: 100%;
-}*/
 .match-head{
     font-size: 20px;
     color: #161616;
@@ -254,6 +255,17 @@ p span{
         align-content: center;
         justify-content: center;
     }
+
+    /*---------Upcoming Match Pgae-----------*/
+    .blogs-info{
+        justify-content: center;
+    }
+    .match-news-m{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .blogs-item{
+        background-color: white;
+    }
 }
 @media only screen and (min-width:677px) and (max-width:1200px) {
     /*-------Header---------*/
@@ -264,12 +276,26 @@ p span{
     .half-width{
         width: 50%;
     }
+    .btn{
+        display: block;
+        margin-top: 110px;
+        margin-bottom: 15px;
+    }
     /*---------Main-----*/
     .blogs{
         flex-direction: column;
     }
     .blogs-item{
+        display: flex;
+        margin-left: 30%;
+        font-size:24px ;
+        width: 50%;
+        padding: 20px 25px;
+        justify-content: space-evenly;
         background-color: white;
+    }
+    .blogs-item a{
+        margin-right: 50%;
     }
     .blog-info{
         display: flex;
@@ -280,10 +306,10 @@ p span{
         grid-template-columns: repeat(2,1fr);
         height: 1600px;
     }
-    .btn{
+    .btn-h{
         display: block;
         margin-top: 110px;
-        margin-left: 50%;
+        margin-left: 70%;
         margin-bottom: 15px;
     }
     
